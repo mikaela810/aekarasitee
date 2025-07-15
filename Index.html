@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My First GitHub Page</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="aekcss.css">
+  <title>AEK F.C Web Site</title>
 </head>
 <body>
-  <h1>Hello World!</h1>
-  <p>This is my website hosted on GitHub Pages.</p>
-  <script src="script.js"></script>
+     <button class="hamburger" onclick="document.querySelector('.sidebar').classList.toggle('open'); document.querySelector('.content').classList.toggle('shifted');">
+    <i class="fas fa-bars"></i>
+  </button>
+
+  <div class="sidebar">
+    <a href="about.html"><i class="fas fa-user"></i>About</a>
+    <a href="Announcements.html"><i class="fas fa-home"></i>Announcements</a>
+    <a href="Team.html"><i class="fas fa-cogs"></i>Team</a>
+    <a href="contact.html"><i class="fas fa-envelope"></i>Contact</a>
+    <a href="Merch.html"><i class="fas fa-merch"></i>Merch</a>
+    <a href="places.html"><i class="fas fa-places"></i>Offices & Training Center</a>
+    <a href="Matches.html"><i class="fas fa-matches"></i>Matches & Program</a>
+  </div>
+
+  <div class="content">
+    <h1>Welcome</h1>
+    <p>This is your main content area. Resize the browser or click the hamburger menu to test responsiveness!</p>
+  </div>
 </body>
 </html>
